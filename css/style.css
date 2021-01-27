@@ -3,3 +3,173 @@
 * Author: Dang Le Hoang Duy
 * Date create: 27/01/2021
 */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.mt-2 {
+    margin-top: .5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.prev-next:link {
+    text-decoration: none;
+    color: blue;
+}
+
+.prev-next:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.col-4, .col-6 {
+    float: left;
+    width: 33.33%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.row:after {
+    margin-right: -15px;
+    margin-left: -15px;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.font-large {
+    font-size: large;
+}
+
+.menu-icon-line {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.footer {
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-item:not(:first-child) {
+    display: none;
+}
+
+.nav.responsive .nav-item {
+    float: none;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: red;
+}
+
+#menu-icon {
+    display: block;
+}
+
+#close-icon {
+    display: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+
+    .nav-item:not(:first-child) {
+        display: block;
+    }
+    
+    .nav-item a:hover {
+        background-color: red;
+    }
+
+    #menu-icon, #close-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
