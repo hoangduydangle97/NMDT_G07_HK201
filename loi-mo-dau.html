@@ -9,75 +9,78 @@
     <head>
         <title>Intenet of Things - Group 07</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="container">
-            <div class="text-center">
-                <img src="./images/iot-logo.jpg" alt="iot-logo" width="30%" height="30%">
-            </div>
-        </div>
-        <div class="container mt-2 sticky">
-            <ul class="nav" id="nav-bar">
-                <li class="nav-item"><a href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="active" href="./loi-mo-dau.html">Lời mở đầu</a></li>
-                <li class="nav-item"><a href="#">Giới thiệu chung</a></li>
-                <li class="nav-item"><a href="#">Tìm hiểu</a></li>
-                <li class="nav-item"><a href="#">Tác động</a></li>
-                <li class="nav-item"><a href="#">Kết luận</a></li>
-                <li class="nav-item"><a href="#">Tài liệu</a></li>
-                <li class="nav-item" id="about" style="float:right"><a class="active" href="#">About</a></li>
-                <li class="nav-item text-center" id="menu-icon" style="float: right;">
-                    <a href="javascript:void(0);" onclick="showNav()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-                <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
-            </ul>
-        </div>
-        <div class="container mt-4">
-            <h2>Lời mở đầu</h2>
-            <div class="text-center">
-                <img src="./images/iot.jpg" alt="iot" width="40%" height="40%">
-            </div>
-            <div class="text-center">
-                <i>Intenet of things</i>
-            </div>
-            <br>
-            <div class="text-justify font-large">
-                Sự ra đời của Internet là thành tựu phát triển vượt bậc của công nghệ 
-                nhằm đáp ứng nhu cầu tìm kiếm thông tin và trở thành một phần thiết yếu 
-                cho đời sống con người. Và nhắc đến sự phát triển của thời đại công nghệ 
-                4.0, một trong những khái niệm nhận được sự quan tâm hàng đầu trên toàn thế 
-                giới chính là Internet Vạn Vật hay còn được gọi là <b>Internet of things (IoT)</b>. 
-                Sự phát triển của IoT hứa hẹn sẽ đem lại những tác động mạnh mẽ lên nhiều mặt trong 
-                công việc và đời sống. Chúng ta hãy cùng nhau tìm hiểu về IoT để khám phá về chân trời 
-                rộng mở mà nó mang lại!
-            </div>
-        </div>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-6">
-                    <div class="text-center">
-                        <a href="./index.html" class="prev-next">
-                            <i class="fa fa-arrow-left"></i>
-                            Home
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="text-center">
-                        <a href="#" class="prev-next">
-                            <i class="fa fa-arrow-right"></i>
-                            Giới thiệu chung
-                        </a>
-                    </div>
+        <div class="container-body">
+            <div class="container">
+                <div class="text-center">
+                    <img class="img" id="img-iot-logo" src="./images/iot-logo.jpg" alt="iot-logo" width="40%" height="40%">
                 </div>
             </div>
-        </div>
-        <div class="container mt-4">
-            <div class="text-center footer">&copy; Copyright 2021 - Group 07 - NMĐT</div>
+            <div class="container mt-2 sticky">
+                <ul class="nav" id="nav-bar">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="active" href="./loi-mo-dau.html">Lời mở đầu</a></li>
+                    <li class="nav-item"><a href="#">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a href="#">Tìm hiểu</a></li>
+                    <li class="nav-item"><a href="#">Tác động</a></li>
+                    <li class="nav-item"><a href="#">Kết luận</a></li>
+                    <li class="nav-item"><a href="#">Tài liệu</a></li>
+                    <li class="nav-item" id="about" style="float:right"><a class="active" href="#">About</a></li>
+                    <li class="nav-item text-center" id="menu-icon" style="float: right;">
+                        <a href="javascript:void(0);" onclick="showNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
+                </ul>
+            </div>
+            <div class="container mt-4">
+                <h2>Lời mở đầu</h2>
+                <div class="text-center">
+                    <img class="img" src="./images/iot.jpg" alt="iot" width="40%" height="40%">
+                </div>
+                <div class="text-center">
+                    <i>Intenet of things</i>
+                </div>
+                <br>
+                <div class="text-justify font-large">
+                    Sự ra đời của Internet là thành tựu phát triển vượt bậc của công nghệ 
+                    nhằm đáp ứng nhu cầu tìm kiếm thông tin và trở thành một phần thiết yếu 
+                    cho đời sống con người. Và nhắc đến sự phát triển của thời đại công nghệ 
+                    4.0, một trong những khái niệm nhận được sự quan tâm hàng đầu trên toàn thế 
+                    giới chính là Internet Vạn Vật hay còn được gọi là <b>Internet of things (IoT)</b>. 
+                    Sự phát triển của IoT hứa hẹn sẽ đem lại những tác động mạnh mẽ lên nhiều mặt trong 
+                    công việc và đời sống. Chúng ta hãy cùng nhau tìm hiểu về IoT để khám phá về chân trời 
+                    rộng mở mà nó mang lại!
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="./index.html" class="prev-next">
+                                <i class="fa fa-arrow-left"></i>
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="#" class="prev-next">
+                                <i class="fa fa-arrow-right"></i>
+                                Giới thiệu chung
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="text-center footer">&copy; Copyright 2021 - Group 07 - NMĐT</div>
+            </div>
         </div>
 
         <script src="./js/script.js"></script>

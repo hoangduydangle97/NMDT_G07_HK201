@@ -11,6 +11,15 @@ html {
     -webkit-tap-highlight-color: transparent
 }
 
+body {
+    margin: 0;
+}
+
+.container-body {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -136,6 +145,13 @@ html {
 
 .active {
     background-color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 @media screen and (min-width: 576px) {
