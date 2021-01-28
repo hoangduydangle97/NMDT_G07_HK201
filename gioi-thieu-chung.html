@@ -1,0 +1,185 @@
+<!--
+* This is gioi-thieu-chung.html
+* Author: Dang Le Hoang Duy
+* Date create: 29/01/2021
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet of Things - Group 07</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-body">
+            <div class="container">
+                <div class="text-center">
+                    <img class="img" id="img-iot-logo" src="./images/iot-logo.jpg" alt="iot-logo" width="40%" height="40%">
+                </div>
+            </div>
+            <div class="container mt-2 sticky">
+                <ul class="nav" id="nav-bar">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./loi-mo-dau.html">Lời mở đầu</a></li>
+                    <li class="nav-item"><a class="active" href="./gioi-thieu-chung.html">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a href="#">Tìm hiểu</a></li>
+                    <li class="nav-item"><a href="#">Tác động</a></li>
+                    <li class="nav-item"><a href="#">Kết luận</a></li>
+                    <li class="nav-item"><a href="#">Tài liệu</a></li>
+                    <li class="nav-item" id="about" style="float:right"><a class="active" href="#">About</a></li>
+                    <li class="nav-item text-center" id="menu-icon" style="float: right;">
+                        <a href="javascript:void(0);" onclick="showNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
+                </ul>
+            </div>
+            <div class="container mt-4">
+                <div class="text-justify font-large">
+                    <ol>
+                        <li id="section">
+                            <div id="title-section">Giới thiệu chung</div>
+                            <ol>
+                                <li class="sub-section">
+                                    <div class="title-sub-section">Khái niệm</div>
+                                    <ol>
+                                        <div>
+                                            Theo <b>Wikipedia</b>, <i>Internet Vạn Vật</i>, 
+                                            hay cụ thể hơn là <i>Mạng lưới vạn vật kết nối Internet</i> 
+                                            hoặc là <i>Mạng lưới thiết bị kết nối Internet</i> (tiếng Anh:
+                                            <i>Internet of Things</i>, viết tắt <i>IoT</i>) là một liên mạng, 
+                                            trong đó các thiết bị, phương tiện vận tải (được gọi là "thiết bị 
+                                            kết nối" và "thiết bị thông minh"), phòng ốc và các trang thiết bị 
+                                            khác được nhúng với các bộ phận điện tử, phần mềm, cảm biến, cơ cấu 
+                                            chấp hành cùng với khả năng kết nối mạng máy tính giúp cho các thiết 
+                                            bị này có thể thu thập và truyền tải dữ liệu.
+                                        </div>
+                                        <div class="mt-2">
+                                            Hay có thể hiểu <i>đơn giản</i> là công nghệ kết nối internet các thiết 
+                                            bị vật lý trên khắp thế giới nhằm mục đích thu thập và truyền tải dữ liệu.
+                                        </div>
+                                    </ol>
+                                </li>
+                                <li class="sub-section">
+                                    <div class="title-sub-section">Tổng quan</div>
+                                    <ol>
+                                        <div>
+                                            Internet vạn vật có đến hàng tỷ thiết bị vật lý trên toàn thế giới 
+                                            được kết nối với nhau qua mạng internet để thu thập, xử lý dữ liệu. 
+                                            Như vậy, với việc ứng dụng IoT, các thiết bị trong cuộc sống có thể 
+                                            trực tiếp kết nối và được điều khiển từ xa thông qua Internet, hạn chế 
+                                            ự tham gia trực tiếp từ con người. Công nghệ IOT phát triển dựa trên nền 
+                                            tảng kết hợp công nghệ mạng Internet (mạng wifi, mạng viễn thông băng rộng 
+                                            4G, 5G) và công nghệ vi cơ điện tử. Các công nghệ hiện đại kết hợp với nhau 
+                                            mang đến nhiều ứng dụng đáp ứng nhu cầu đa dạng của người dùng giúp tăng trưởng, 
+                                            hiệu quả năng suất công việc. Quá trình kết nối các yếu tố thực và ảo này không 
+                                            chỉ đánh dấu một bước phát triển về công nghệ mà nó còn là tiền đề giúp thúc đẩy 
+                                            những bước phát triển mạnh mẽ trong cuộc sống tương lai.
+                                        </div>
+                                    </ol>
+                                </li>
+                                <li class="sub-section">
+                                    <div class="title-sub-section">Tình hình phát triển</div>
+                                    <ol>
+                                        <li class="sub-sub-section">
+                                            <div class="title-sub-sub-section">Trên thế giới</div>
+                                            <div>
+                                                Mặc dù đã manh nha từ lâu nhưng kỷ nguyên Internet of Things chỉ thực sự 
+                                                được sự được chú ý và bùng nổ trong những năm gần đây, sau sự phát triển 
+                                                của smartphone, tablet và những kết nối không dây, … Và ngay sau khi nhận 
+                                                được sự chú ý của cộng đồng, IoT đã cho thấy tiềm năng của mình với những 
+                                                số liệu đáng kinh ngạc.
+                                            </div>
+                                            <div class="mt-2">
+                                                Là “một trong những phát kiến quan trọng và quyền lực nhất của loại người”, 
+                                                Cisco IBSG, nhà cung cấp giải pháp và thiết bị mạng hàng đầu hiện nay dự báo: 
+                                                Đến năm 2020, sẽ có khoảng 50 tỷ đồ vật kết nối vào Internet, bao gồm hàng tỷ 
+                                                thiết bị di động, tivi, máy giặt, … Để thấy được sự phát triển của lĩnh vực này, 
+                                                họ cũng đưa ra số liệu vào năm 1984, khi mà Cisco mới thành lập mới chỉ có khoảng 
+                                                1.000 thiết bị được kết nối mạng toàn cầu, đến năm 2010, con số này đã lên mức 10 tỷ.
+                                            </div>
+                                            <div class="mt-2">
+                                                Intel, đơn vị mới tham gia vào thị trường sản xuất chip cho các thiết bị thông minh 
+                                                phục vụ IoT cũng đã thu về hơn 2 tỷ USD trong năm 2014 từ lĩnh vực này, tăng trưởng 
+                                                19% so với năm 2013.
+                                            </div>
+                                            <div class="mt-2">
+                                                Những con số khẳng định IoT là xu hướng của tương lai Internet of Things đến năm 2020 
+                                                dự kiến sẽ đạt đến:
+                                            </div>
+                                            <ul class="mt-2" style="list-style-type: disc;">
+                                                <li>4 tỷ người kết nối với nhau</li>
+                                                <li>4 ngàn tỷ USD doanh thu</li>
+                                                <li>Hơn 25 triệu ứng dụng</li>
+                                                <li>Hơn 25 tỷ hệ thống nhúng thông minh</li>
+                                                <li>50 ngàn tỷ Gigabytes dữ liệu</li>
+                                            </ul>
+                                            <div class="mt-2">
+                                                Tác động của IoT rất đa dạng, trên các lĩnh vực: quản lý hạ tầng, y tế, xây dựng và tự 
+                                                động hóa, giao thông, …
+                                            </div>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <div class="title-sub-sub-section">Việt Nam</div>
+                                            <div>
+                                                Tại Việt Nam IoT đã được ứng dụng từ lâu dưới các hình thức tự động hóa như hệ thống điều 
+                                                khiển đèn giao thông, hệ thống tưới tiêu tự động, … Tuy nhiên chỉ đến những năm gần đây 
+                                                thì khái niệm IoT tại Việt Nam mới được nhắc đến nhiều thông qua các hội thảo, hội nghị 
+                                                về xu hướng công nghệ của Cisco, Intel, Hội Tin học TP HCM và một số công ty trong nước 
+                                                như Mobiphone, DTT, Sao Bắc Đẩu. Trước đó, IBM có chiến dịch “Hành tinh thông minh hơn” 
+                                                và nhấn mạnh vào các thành phố thông minh trong đó Đà Nẵng được chọn thực hiện thí điểm 
+                                                này từ năm 2012 - 2013.
+                                            </div>
+                                            <div class="mt-2">
+                                                Một nghiên cứu gần đây của Cisco mang tên “Ready, Steady, Unsure” (Sẵn sàng, Ổn định, 
+                                                Không chắc chắn) cho biết: Hơn một nửa công ty ở Việt Nam được hỏi đã xếp IoT là một 
+                                                trong ba công nghệ hàng đầu sẽ tác động đến tương lai kỹ thuật số của doanh nghiệp họ. 
+                                                Nghiên cứu này cũng chỉ ra rằng 36% công ty tham gia trả lời đã bắt đầu sử dụng các 
+                                                giải pháp IoT. Đây là tỷ lệ cao nhất ở Đông Nam Á, ngang với đất nước Singapore.
+                                            </div>
+                                            <div class="mt-2">
+                                                Là một công nghệ mới, IoT đã và đang được ứng dụng vô cùng phong phú trong đời sống 
+                                                từ kết nối trong gia đình, xã hội (smart home, smart city) đến nông nghiệp, công 
+                                                nghiệp, … IoT cũng là thị trường đầy tiềm năng, chỉ riêng mảng IoT trên smartphone 
+                                                có thể giá trị tới 2.500 tỷ VNĐ, tăng trưởng đến 8.200 tỷ VNĐ vào năm 2023.
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="./loi-mo-dau.html" class="prev-next">
+                                <i class="fa fa-arrow-left"></i>
+                                Lời mở đầu
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="#" class="prev-next">
+                                <i class="fa fa-arrow-right"></i>
+                                Tìm hiểu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="text-center footer">&copy; Copyright 2021 - Group 07 - NMĐT</div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
