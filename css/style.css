@@ -92,6 +92,10 @@ body {
     font-weight: bold;
 }
 
+.line-indent {
+    line-height: 1.5;
+}
+
 .menu-icon-line {
     width: 35px;
     height: 5px;
@@ -160,6 +164,22 @@ body {
     background-color: dodgerblue;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 ol {
     list-style-type: none;
     counter-reset: item;
@@ -211,15 +231,34 @@ li ol > li:before {
     height: 80%;
 }
 
+#logo-bk {
+    width: 30%;
+    height: 30%;
+}
+
 @media screen and (min-width: 576px) {
     .container {
         max-width: 540px
+    }
+
+    #logo-bk {
+        width: 20%;
+        height: 20%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px
+    }
+
+    #logo-bk {
+        width: 15%;
+        height: 15%;
+    }
+
+    #noi-dung {
+        margin-left: 40px;
     }
 }
 
@@ -243,6 +282,11 @@ li ol > li:before {
     .img {
         width: 50%;
         height: 50%;
+    }
+
+    #logo-bk {
+        width: 10%;
+        height: 10%;
     }
 
     ol {

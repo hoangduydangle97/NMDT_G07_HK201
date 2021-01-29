@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Internet of Things - Group 07</title>
+        <title>Internet of Things - Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
@@ -20,16 +20,16 @@
                     <img class="img" id="img-iot-logo" src="./images/iot-logo.jpg" alt="iot-logo">
                 </div>
             </div>
-            <div class="container mt-2">
+            <div class="container mt-2 sticky">
                 <ul class="nav" id="nav-bar">
-                    <li class="nav-item"><a class="active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="active" href="./index.html">Home</a></li>
                     <li class="nav-item"><a href="./loi-mo-dau.html">Lời mở đầu</a></li>
                     <li class="nav-item"><a href="./gioi-thieu-chung.html">Giới thiệu chung</a></li>
                     <li class="nav-item"><a href="./tim-hieu.html">Tìm hiểu</a></li>
-                    <li class="nav-item"><a href="#">Tác động</a></li>
+                    <li class="nav-item"><a href="./tac-dong.html">Tác động</a></li>
                     <li class="nav-item"><a href="./ket-luan.html">Kết luận</a></li>
                     <li class="nav-item"><a href="./tai-lieu.html">Tài liệu</a></li>
-                    <li class="nav-item" id="about" style="float:right;"><a href="#">About</a></li>
+                    <li class="nav-item" id="about" style="float:right;"><a href="./about.html">About</a></li>
                     <li class="nav-item text-center" id="menu-icon" style="float: right;">
                         <a href="javascript:void(0);" onclick="showNav()">
                             <i class="fa fa-bars"></i>
@@ -38,17 +38,109 @@
                     <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
                 </ul>
             </div>
+            <div class="container mt-4 text-center">
+                <h4>
+                    <div>ĐẠI HỌC QUỐC GIA TPHCM</div>
+                    <div class="mt-2">TRƯỜNG ĐẠI HỌC BÁCH KHOA TPHCM</div>
+                    <div class="mt-2">KHOA KHOA HỌC - KỸ THUẬT MÁY TÍNH</div>
+                </h4>
+                <div class="text-center">
+                    <img id="logo-bk" src="./images/logo-bk.jpg" alt="logo-bk">
+                </div>
+                <h2>NHẬP MÔN ĐIỆN TOÁN (CO1006)</h2>
+                <hr>
+                <h3 style="color: blue;">Bài tập lớn số 3</h3>
+                <h1 style="color: red; font-size: 2.5em;">Internet of things</h1>
+                <hr>
+            </div>
             <div class="container mt-4">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="text-center">column 1</div>
-                    </div>
-                    <div class="col-4">
-                        <div class="text-center">column 2</div>
-                    </div>
-                    <div class="col-4">
-                        <div class="text-center">column 3</div>
-                    </div>
+                <h1>Nội dung</h1>
+                <div id="noi-dung">
+                    <div style="font-size: 1.5em; font-weight: bold; margin-bottom: .5em;">Lời mở đầu</div>
+                    <ol>
+                        <li id="section">
+                            <span id="title-section">Giới thiệu chung</span>
+                            <ol>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Khái niệm</span>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Tổng quan</span>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Tình hình phát triển</span>
+                                    <ol>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Trên thế giới</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Việt Nam</span>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="section">
+                            <span id="title-section">Tìm hiểu</span>
+                            <ol>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Cách thức hoạt động</span>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Tính chất đặc trưng</span>
+                                    <ol>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Khả năng định danh</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Tính thông minh</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Phức tạp</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Kích thước cùa IoT</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Luồng năng lượng mới</span>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Một số ứng dụng</span>
+                                    <ol>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Xã hội</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Doanh nghiệp</span>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Người tiêu dùng</span>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="section">
+                            <span id="title-section">Tác động</span>
+                            <ol>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Kinh tế</span>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Xã hội</span>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Thời kỳ COVID-19</span>
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="section">
+                            <span id="title-section">Kết luận</span>
+                        </li>
+                    </ol>
+                    <div style="font-size: 1.5em; font-weight: bold; margin-top: .5em;">Tài liệu</div>
                 </div>
             </div>
             <div class="container mt-3">

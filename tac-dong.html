@@ -1,0 +1,278 @@
+<!--
+* This is tac-dong.html
+* Author: Dang Le Hoang Duy
+* Date create: 30/01/2021
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet of Things - Tác động</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-body">
+            <div class="container">
+                <div class="text-center">
+                    <img class="img" id="img-iot-logo" src="./images/iot-logo.jpg" alt="iot-logo">
+                </div>
+            </div>
+            <div class="container mt-2 sticky">
+                <ul class="nav" id="nav-bar">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./loi-mo-dau.html">Lời mở đầu</a></li>
+                    <li class="nav-item"><a href="./gioi-thieu-chung.html">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a href="./tim-hieu.html">Tìm hiểu</a></li>
+                    <li class="nav-item"><a class="active" href="./tac-dong.html">Tác động</a></li>
+                    <li class="nav-item"><a href="./ket-luan.html">Kết luận</a></li>
+                    <li class="nav-item"><a href="./tai-lieu.html">Tài liệu</a></li>
+                    <li class="nav-item" id="about" style="float:right;"><a href="./about.html">About</a></li>
+                    <li class="nav-item text-center" id="menu-icon" style="float: right;">
+                        <a href="javascript:void(0);" onclick="showNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
+                </ul>
+            </div>
+            <div class="container mt-4">
+                <div class="text-justify font-large">
+                    <ol style="counter-reset: item 2;">
+                        <li id="section">
+                            <span id="title-section">Tác động</span>
+                            <ol>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Kinh tế</span>
+                                    <div class="line-indent">
+                                        Tác động kinh tế tiềm năng của IoT được ước tính từ 2,7 ngàn tỷ đến 6,2 
+                                        ngàn tỷ đô la mỗi năm vào năm 2025 thông qua việc ứng dụng một nửa các 
+                                        ứng dụng chính. Tác động lớn nhất trong số các ứng dụng đã xác định được 
+                                        là trong lĩnh vực chăm sóc sức khỏe và trong sản xuất chế tạo. Thông qua 
+                                        các ứng dụng chăm sóc sức khỏe được phân tích, công nghệ IoT có thể tạo 
+                                        ra một tác động kinh tế lớn từ 1,1 nghìn tỷ đến 2,5 nghìn tỷ đô la mỗi năm 
+                                        vào 2025.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>chế tạo và sản xuất máy móc</i></u>, các bộ 
+                                        cảm biến và bộ truyền động thậm chí có thể thay đổi vị trí của vật thể khi chúng 
+                                        di chuyển xuống dây chuyền lắp ráp, đảm bảo chúng tiếp cận máy công cụ ở vị trí 
+                                        tối ưu, tránh được những sai lệch vị trí rất nhỏ mà có thể nứt hoặc thậm chí làm 
+                                        hỏng máy công cụ trong quá trình xử lý. Ước tính năng suất tăng tương đương có 
+                                        thể từ 2,5% - 5% khi ứng dụng công nghệ Internet of Things vào trong các ngành 
+                                        công nghiệp chế tạo sử dụng các phương pháp chế tạo liên tiếp và rời rạc. Tổng 
+                                        chi phí hoạt động của sản xuất toàn cầu hiện nay khoảng 25 nghìn tỷ đô la mỗi 
+                                        năm và có thể đạt được hơn 47 nghìn tỷ đô la vào năm 2025. Với giá thành thiết 
+                                        bị cảm biến thấp và nhu cầu tối ưu hóa trong sản xuất lớn, do đó tỷ lệ áp dụng 
+                                        thiết bị cảm biến công nghệ IoT là rất cao; trên thực tế, có đến 80% - 100% toàn 
+                                        bộ quá trình chế tạo sản xuất có thể áp dụng các ứng dụng của IoT vào năm 2025. 
+                                        Điều này mang lại những tác động kinh tế tiềm năng từ 900 tỷ đến 2,3 nghìn tỷ đô 
+                                        la mỗi năm vào năm 2025.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>sử dụng năng lượng</i></u>, với việc sử dụng 
+                                        lưới điện thông minh là một ứng dụng quan trọng của IoT, với giá trị tiềm năng 
+                                        ước tính có thể từ 200 tỷ - 500 tỷ đô la vào năm 2025. Phần lớn tác động này có 
+                                        thể xuất phát từ các ứng dụng quản lý nhu cầu để có thể giảm chi phí sử dụng cao 
+                                        điểm, đồng nghĩa với việc có thể giảm chi phí mua điện với mức giá cao nhất. Quản 
+                                        lý nhu cầu có thể giảm bớt các nhu cầu trong giờ cao điểm từ 2% - 4% hay giảm 
+                                        được nhu cầu điện tổng thể từ 1% - 2%. Điều này có thể cho phép các công ty dịch 
+                                        vụ công cộng tránh được việc đầu tư hàng nghìn tỷ đô la xây dựng thêm các trạm điện 
+                                        thế, cơ sở hạ tầng và tăng công suất.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>các ngành công nghệ khai thác dầu</i></u>, kim 
+                                        loại và khoáng sản, công nghệ IoT có thể giúp chúng ta tìm kiếm phát hiện, lập được 
+                                        bản đồ vị trí khoáng sản và có thể tăng khả năng thu hồi. Việc ứng dụng các thiết 
+                                        bị cảm biến và dữ liệu lớn trong quá trình khai thác vật liệu cơ bản có thể giảm 
+                                        từ 5% - 10% các chi phí vận hành. Ước tính tổng chi phí vận hành đối với các ngành 
+                                        công nghệ khai thác dầu, kim loại và khoáng sản vào năm 2025 là 1,4 nghìn tỷ đô la. 
+                                        Việc áp dụng công nghệ IoT có thể rất lớn đối với ngành công nghiệp này, có thể đạt 
+                                        từ 80% - 100%. Ở mức độ áp dụng này, tác động kinh tế tiềm năng có thể đạt được 
+                                        từ 100 tỷ đến 200 tỷ đô la mỗi năm vào năm 2025.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>nông nghiệp</i></u>, IoT có tiềm năng tạo ra các 
+                                        giá trị đáng kể. Ví dụ, các thiết bị cảm biến lá cây có thể đo ứng suất trong các 
+                                        loại cây trồng dựa vào các cấp độ của hơi ẩm. Thiết bị cảm biết đất có thể tập hợp 
+                                        thông tin về lượng nước chảy vào ruộng và theo dõi những thay đổi về đổ ẩm của đất, 
+                                        cácbon, nitơ, và nhiệt độ của đất. Những dữ liệu này có thể giúp người nông dân tối 
+                                        ưu hóa thời gian tưới cho cây và tránh được những thiệt hại mùa màng.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Dữ liệu về đất và thực vật có thể dùng để hướng dẫn phương pháp tưới nhỏ giọt, phương 
+                                        pháp chính là sẽ đưa phân bón dạng lỏng chảy qua các hệ thống tưới nhỏ giọt để đảm bảo 
+                                        các cây trồng có thể nhận được một lượng dinh dưỡng và nước đúng liều lượng ở mọi thời 
+                                        điểm. Ví dụ, ở Hoa Kỳ, kết quả ứng dụng tưới nhỏ giọt tại Trang trại Stamp Farms, thành 
+                                        phố Decatur, Michigan cho thấy sản lượng ngô đã tăng lên từ 10% - 40%. Việc ứng dụng 
+                                        các dữ liệu cảm biến để “canh tác chính xác” ước tính có thể tăng sản lượng từ 10% - 20% 
+                                        trên toàn cầu. Giả sử có 25% - 50% các trang trại đều áp dụng các phương pháp tiếp cận 
+                                        này, IoT có khả năng tạo ra thêm được 100 tỷ đô la mỗi năm vào năm 2025.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>kinh doanh bán lẻ</i></u>, người ta ước tính, các nhà 
+                                        bán lẻ bị mất tương đương 4% doanh số bán ra hàng năm do không còn hàng trong kho để bán 
+                                        cho người tiêu dùng. Đến năm 2025, con số này có thể tương ứng với 200 tỷ đô la/năm. Ước 
+                                        tính 35% - 50% giá trị này sẽ có thể thu hồi lại được khi ứng dụng các cảm biến và các 
+                                        thẻ định vị để thắt chặt chuỗi cung ứng và dự đoán chính xác những khu vực có thể xảy ra 
+                                        sự cố hàng đã bán hết. Điều này có thể thúc đẩy tác động kinh tế tiềm năng từ 20 tỷ đến 
+                                        100 tỷ đô la mỗi năm vào năm 2025.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>trang bị các thiết bị cảm biến cho các xe ô tô</i></u>, 
+                                        để ngăn ngừa tai nạn xảy ra có thể tạo ra giá trị kinh tế tới 50 tỷ đô la mỗi năm vào năm 
+                                        2025. Điều này ước tính những thiệt hại về tài sản sẽ giảm xuống nếu như hệ thống phanh 
+                                        tự động được ứng dụng rộng rãi, nó có thể ngăn ngừa phần lớn các vụ va chạm có tốc độ di 
+                                        chuyển thấp (ở đây loại trừ các vụ va chạm có tốc độ cao, thường liên quan đến thương tật 
+                                        hay tử vong). Ước tính rằng có thể tránh được 25% những thiệt hại gây ra bởi các vụ tai 
+                                        nạn tốc độ thấp khi ứng dụng công nghệ IoT, giảm thiệt hại về tài sản lên đến 50 tỷ đô la 
+                                        trên toàn cầu.
+                                    </div>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Xã hội</span>
+                                    <div class="line-indent">
+                                        <u style="color: blue;">Trong <i>chăm sóc sức khỏe</i></u>, các ứng dụng của IoT đang 
+                                        thúc đẩy sự phát triển của các nền tảng để thực hiện các hệ thống môi trường hỗ trợ cuộc 
+                                        sống cung cấp các dịch vụ hỗ trợ trong các lĩnh vực để tiến hành các hoạt động hàng ngày, 
+                                        giám sát sức khoẻ và hoạt động, tăng cường an toàn và an ninh, tiếp cận với các hệ thống 
+                                        y tế và cấp cứu, và tạo điều kiện hỗ trợ y tế nhanh chóng. Mục tiêu chính là nâng cao chất 
+                                        lượng cuộc sống cho những người cần được hỗ trợ hoặc giám sát thường xuyên, giảm bớt các 
+                                        rào cản trong việc theo dõi các thông số sức khoẻ quan trọng, tránh các chi phí chăm sóc 
+                                        sức khoẻ không cần thiết và cung cấp sự hỗ trợ y tế kịp thời và chính xác. Sự phát triển 
+                                        của IoT đã tạo ra bước chuyển đổi đột phá lớn trong y khoa, tạo ra một ngành công nghiệp 
+                                        chăm sóc sức khoẻ hiệu quả. Ở đó, các nhà cung cấp dịch vụ y tế, giới nghiên cứu, các hãng 
+                                        dược, … cũng như các bác sỹ có thể tiếp cận kiến thức y học phát triển, kết hợp dữ liệu lịch 
+                                        sử và dữ liệu thời gian thực (dữ liệu di truyền học, lối sống, môi trường, ...) của bệnh nhân 
+                                        để đưa ra những nghiên cứu, khuyến cáo phòng tránh, chẩn đoán và có phác đồ điều trị phù hợp
+                                        cho từng người bệnh.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>cải thiện chất lượng giáo dục</i></u>, cùng với sự phát triển 
+                                        mạnh mẽ của khoa học, kỹ thuật và công nghệ như hiện nay, lượng kiến thức cần thiết cho một lĩnh 
+                                        vực học tập liên tục được cập nhật và tăng nhanh; nhu cầu học tập và phát triển năng lực nghề nghiệp 
+                                        của người học là rất lớn. Để có thể vừa truyền tải lượng kiến thức lớn, đa dạng mà không gây nhàm chán, 
+                                        vừa có thể kích thích khả năng sáng tạo và tinh thần tự học của học sinh, sinh viên, cần thiết phải đổi 
+                                        mới phương pháp dạy và học. Một trong những phương pháp đó là ứng dụng công nghệ Internet of Things.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Công nghệ IoT đang được phát triển mạnh mẽ và ứng dụng trong nhiều lĩnh vực khác nhau. Với tính năng 
+                                        vượt trội về công nghệ, IoT trong giáo dục cho phép người dạy có thể điện tử hóa và trực quan nội dung 
+                                        dạy học. Hiện nay, hầu hết các bài giảng ở bậc phổ thông được minh họa thông qua hình ảnh trong sách 
+                                        hoặc slide trình chiếu là chủ yếu, học sinh thiếu các học cụ trực quan và hiếm có cơ hội được trải 
+                                        nghiệm trực tiếp vào nội dung bài học. Với IoT được tích hợp trong các lớp học, giảng viên có thể quản 
+                                        lý lớp học từ xa bằng lệnh thoại hoặc cử chỉ, thiết lập giao tiếp với sinh viên từ các địa điểm từ xa, 
+                                        thu thập phản hồi có giá trị từ sinh viên về một chủ đề cụ thể và hỗ trợ sinh viên có trình độ chuyên 
+                                        môn đặc biệt. Các tình huống khác bao gồm việc sử dụng cảm biến tiếng ồn để giao tiếp với các lớp học 
+                                        lân cận và tư vấn cho họ về việc giảm mức độ tiếng ồn. IoT là một tiểu danh mục công nghệ Internet tạo 
+                                        điều kiện cho việc học tập ở nhiều khía cạnh. Hệ thống IoT giúp các tổ chức giáo dục dễ dàng thu thập 
+                                        lượng lớn dữ liệu từ các cảm biến và thiết bị đeo được và thực hiện các hành động thực tế dựa trên 
+                                        những dữ liệu đó, các hệ thống này cho phép sinh viên khám phá và truy cập tài liệu học tập và thông 
+                                        tin khác bất cứ lúc nào.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>việc quản lý các hệ thống, cơ sở hạ tầng và dịch vụ thành thị</i></u> 
+                                        bao gồm hệ thống giao thông, hệ thống nước sạch và nước thải, và các hệ thống an toàn công cộng. Ví dụ, 
+                                        các thiết bị cảm biến dùng theo dõi mô hình giao thông có thể phát ra các dữ liệu để tối ưu hóa lưu lượng 
+                                        bằng cách điều chỉnh thời gian của các đèn tín hiệu giao thông, thay đổi tuyến xe buýt. Các thiết bị cảm 
+                                        biến cũng có thể tự động kích hoạt nút báo động để chuyển hướng lưu lượng giao thông ở khu vực xảy ra tai 
+                                        nạn để giảm thiểu thời gian ùn tắc chậm trễ gây tốn kém. Một số thành phố như London, Singapore, và Houston 
+                                        đều thực sự đã giảm được đáng kể thời gian di chuyển khi ứng dụng công nghệ này. Căn cứ vào ví dụ này, các 
+                                        thành phố có thể cắt giảm thời gian lưu thông trên đường của các phương tiện giao thông trung bình từ 10% - 20%, 
+                                        tiết kiệm được hàng trăm triệu giờ đồng hồ mỗi năm.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>giám sát môi trường</i></u> thì đây là một ứng dụng rộng rãi cho IoT. Nó liên 
+                                        quan đến mọi thứ, từ giám sát mức độ ozone trong cơ sở đóng gói thịt đến giám sát khói trong các khu rừng quốc gia. 
+                                        Việc sử dụng cảm biến môi trường IoT cho các ứng dụng khác nhau này có thể giảm bớt lượng lao động và làm cho quá 
+                                        trình này trở nên đơn giản và hiệu quả.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Công nghệ giám sát an toàn không khí và nước hiện nay chủ yếu sử dụng lao động thủ công cùng với các thiết bị tiên 
+                                        tiến và xử lý trong phòng thí nghiệm. IoT cải tiến công nghệ này bằng cách giảm lao động của con người, cho phép 
+                                        lấy mẫu thường xuyên, tăng phạm vi lấy mẫu và giám sát, cho phép thử nghiệm tinh vi tại chỗ và phản hồi với hệ thống 
+                                        phát hiện. Điều này cho phép ngăn ngừa ô nhiễm đáng kể và các thảm họa liên quan. Mặc dù các hệ thống tiên tiến, 
+                                        mạnh mẽ hiện đang được sử dụng cho phép giám sát sâu, nhưng lại bị ảnh hưởng bởi việc sử dụng các công cụ có phạm 
+                                        vi rộng, chẳng hạn như radar và vệ tinh, thay vì sử dụng các giải pháp chi tiết. Nhờ đó cho phép phát hiện sớm và 
+                                        ứng phó sớm để tránh thiệt hại về người và tài sản.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        <u style="color: blue;">Trong <i>quan hệ xã hội</i></u>, con người sống trong cộng đồng và dựa vào nhau trong các 
+                                        hoạt động hàng ngày. Những khuyến nghị tốt về một nhà hàng, xưởng sửa xe, bộ phim, điện thoại, ... vẫn là một số điều 
+                                        mà hiểu biết cộng đồng giúp chúng ta xác định hành động của mình. Nếu như trong quá khứ, sự khôn ngoan cộng đồng này 
+                                        rất khó tiếp cận và thường dựa vào đầu vào từ một số ít người tốt bụng, thì với sự gia tăng nhanh chóng của web và gần 
+                                        đây hơn là các mạng xã hội, kiến thức cộng đồng đã luôn sẵn sàng- chỉ cần một cú nhấp chuột.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Ngày nay, sự khôn ngoan cộng đồng dựa trên thông tin đầu vào ý thức từ những người, chủ yếu dựa trên các quan điểm 
+                                        của cá nhân. Với sự phát triển của công nghệ IoT và công nghệ thông tin nói chung, việc mở rộng khái niệm kiến thức 
+                                        cộng đồng trở nên thú vị hơn khi quan sát tự động các sự kiện trên thế giới.
+                                    </div>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Thời kỳ COVID-19</span>
+                                    <div class="line-indent">
+                                        “COVID-19” như một cú hích đã làm thay đổi nhiều khía cạnh của cuộc sống và môi trường kinh doanh hiện tại. Một số 
+                                        lĩnh vực IoT đang cung cấp những giá trị đáng kể và hoạt động kinh doanh đang phát triển mạnh mẽ nhưng cũng có một 
+                                        số lĩnh vực mới bắt đầu nhận ra giá trị thực sự của IoT.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Bán lẻ, hậu cần và chăm sóc sức khỏe là một số trong các lĩnh vực đã từ lâu có sự xuất hiện của IoT và trong thời kỳ 
+                                        dịch bệnh này khi các biện pháp giãn cách xã hội, phong tỏa được áp dụng, các tiếp xúc gần bị hạn chế, IoT một lần nữa 
+                                        đã minh chứng tính hiệu quả trong việc hỗ trợ các ngành này vận hành an toàn, hiệu quả và ổn định.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Thành công trước tiên phải kể đến công nghệ mua sắm trực tuyến (mua sắm không tiếp xúc) sử dụng nền tảng trực tuyến đã 
+                                        từ lâu được các công ty bán lẻ đưa vào sử dụng để nắm bắt nhu cầu, thiết lập và xử lý các đơn hàng nhanh chóng, chính xác, 
+                                        hiệu quả. IoT đã tái cơ cấu và đưa lĩnh vực này lên một tầm cao mới bằng các ứng dụng thông minh như: nhà kho thông minh, 
+                                        cửa hàng thông minh và ứng dụng mua sắm trên điện thoại thông minh, … giúp khách hàng và nhà kinh doanh theo dõi được tình 
+                                        trạng, vị trí của các sản phẩm, đơn hàng tăng tính xác thực, tránh tình trạng quá tải.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Với mô hình quản lý từ xa, IoT cũng đang giúp tạo điều kiện thuận lợi cho ngành hậu cầu trong việc quản lý, vận chuyển, 
+                                        giám sát hàng hóa cụ thể, chính xác hơn.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Trong khi việc tiếp xúc trực tiếp với các dịch vụ y tế, điều trị bị hạn chế tối đa thì các sản phẩm chăm sóc sức khỏe có 
+                                        tích hợp công nghệ IoT và lĩnh vực y tế, chăm sóc sức khỏe từ xa đã và đang là lựa chọn khả thi và hiệu quả.
+                                    </div>
+                                    <div class="mt-3 line-indent">
+                                        Để đối phó với viễn cảnh vừa phải đảm bảo lợi nhuận khi doanh thu giảm xuống vừa phải vận hành trong điều kiện giãn cách, 
+                                        tiết giảm chi phí vận hành chính là hướng đi khả quan nhất. Trong điều kiện này, giải pháp IoT thực sự là một lựa chọn hợp lý.
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="./loi-mo-dau.html" class="prev-next">
+                                <i class="fa fa-arrow-left"></i>
+                                Lời mở đầu
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="./tim-hieu.html" class="prev-next">
+                                <i class="fa fa-arrow-right"></i>
+                                Tìm hiểu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="text-center footer">&copy; Copyright 2021 - Group 07 - NMĐT</div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
