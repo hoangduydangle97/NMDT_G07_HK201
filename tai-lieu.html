@@ -1,0 +1,148 @@
+<!--
+* This is tai-lieu.html
+* Author: Dang Le Hoang Duy
+* Date create: 29/01/2021
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet of Things - Group 07</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-body">
+            <div class="container">
+                <div class="text-center">
+                    <img class="img" id="img-iot-logo" src="./images/iot-logo.jpg" alt="iot-logo">
+                </div>
+            </div>
+            <div class="container mt-2 sticky">
+                <ul class="nav" id="nav-bar">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./loi-mo-dau.html">Lời mở đầu</a></li>
+                    <li class="nav-item"><a href="./gioi-thieu-chung.html">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a href="./tim-hieu.html">Tìm hiểu</a></li>
+                    <li class="nav-item"><a href="#">Tác động</a></li>
+                    <li class="nav-item"><a href="./ket-luan.html">Kết luận</a></li>
+                    <li class="nav-item"><a class="active" href="./tai-lieu.html">Tài liệu</a></li>
+                    <li class="nav-item" id="about" style="float:right;"><a href="#">About</a></li>
+                    <li class="nav-item text-center" id="menu-icon" style="float: right;">
+                        <a href="javascript:void(0);" onclick="showNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
+                </ul>
+            </div>
+            <div class="container mt-4">
+                <h2>Tài liệu</h2>
+                <ol style="margin-left: 40px;">
+                    <li>
+                        <a href="https://mona.media/iot-la-gi/">
+                            <i>IoT là gì?</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://truetech.com.vn/internet-of-things-iot-internet-van-vat-trong-doi-song-va-doanh-nghiep/">
+                            <i>Internet of Things (IoT) – Internet vạn vật trong đời sống và doanh nghiệp.</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://securitydaily.net/internet-of-things-iot-la-gi/">
+                            <i>Internet of Things – IoT là gì?</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://niithanoi.vn/chi-tiet-tin/1768/ung-dung-iot-%7C-10-ung-dung-internet-of-things-hang-dau.html#.YAws2OgzZPY">
+                            <i>10 ứng dụng internet of things hàng đầu</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bkaii.com.vn/tin-tuc/222-10-ung-dung-the-gioi-thuc-cua-internet-of-things">
+                            <i>10 ứng dụng thế giới thực của Internet of Things</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://luci.vn/ung-dung-cua-iot-trong-cuoc-song-hien-dai/">
+                            <i>Ứng dụng của IoT trong cuộc sống hiện đại</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://smartfactoryvn.com/technology/ai-ml/vai-ung-dung-trong-cong-nghiep-cua-cam-bien-iiot-industrial-internet-of-things/">
+                            <i>Một số ứng dụng IoT trong công nghiệp (Industrial Internet Of Things)</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://aita.gov.vn/ung-dung-iot-trong-nong-nghiep-thong-minh">
+                            <i>Ứng dụng IoT trong nông nghiệp thông minh</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://aita.gov.vn/ung-dung-iot-trong-mot-so-dich-vu-giao-thong-thong-thong-minh-">
+                            <i>Ứng dụng IoT trong một số dịch vụ giao thông thông thông minh</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://iottuonglai.com/ung-dung-iot-trong-giao-duc.html">
+                            <i>Ứng dụng iot trong giáo dục</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://iottuonglai.com/ung-dung-iot-trong-doanh-nghiep.html">
+                            <i>Ứng dụng của IoT trong doanh nghiệp</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://iottuonglai.com/co-hoi-va-thach-thuc-cua-iot.html">
+                            <i>Cơ hội và thách thức của iotp</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://smartfactoryvn.com/technology/internet-of-things/iot-la-gi-the-internet-of-things-iot-cuoc-cach-mang-cong-nghe/">
+                            <i>IoT là gì? Lịch sử và tiềm năng của công nghệ Internet vạn vật</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.fasolutions.vn/uu-diem-va-nhuoc-diem-cua-internet-of-things/">
+                            <i>Internet Vạn Vật</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cambiendoapsuat.vn/iot-la-gi-ung-dung-iot-trong-cong-nghiep/">
+                            <i>IoT là gì? Ứng dụng IoT trong công nghiệp</i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="./ket-luan.html" class="prev-next">
+                                <i class="fa fa-arrow-left"></i>
+                                Kết luận
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="#" class="prev-next">
+                                <i class="fa fa-arrow-right"></i>
+                                About
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="text-center footer">&copy; Copyright 2021 - Group 07 - NMĐT</div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,564 @@
+<!--
+* This is tim-hieu.html
+* Author: Dang Le Hoang Duy
+* Date create: 29/01/2021
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet of Things - Group 07</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-body">
+            <div class="container">
+                <div class="text-center">
+                    <img class="img" id="img-iot-logo" src="./images/iot-logo.jpg" alt="iot-logo">
+                </div>
+            </div>
+            <div class="container mt-2 sticky">
+                <ul class="nav" id="nav-bar">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./loi-mo-dau.html">Lời mở đầu</a></li>
+                    <li class="nav-item"><a href="./gioi-thieu-chung.html">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a class="active" href="./tim-hieu.html">Tìm hiểu</a></li>
+                    <li class="nav-item"><a href="#">Tác động</a></li>
+                    <li class="nav-item"><a href="./ket-luan.html">Kết luận</a></li>
+                    <li class="nav-item"><a href="./tai-lieu.html">Tài liệu</a></li>
+                    <li class="nav-item" id="about" style="float:right;"><a href="#">About</a></li>
+                    <li class="nav-item text-center" id="menu-icon" style="float: right;">
+                        <a href="javascript:void(0);" onclick="showNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="close-icon"><a href="javascript:void(0);" onclick="hideNav()">&times; Close</a></li>
+                </ul>
+            </div>
+            <div class="container mt-4">
+                <div class="text-justify font-large">
+                    <ol style="counter-reset: item 1;">
+                        <li id="section">
+                            <span id="title-section">Tìm hiểu</span>
+                            <ol>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Cách thức hoạt động</span>
+                                    <ol>
+                                        <div>
+                                            Các thiết bị và phương tiện thông minh ban đầu là các thiết bị, phương 
+                                            tiện thông thường mà chúng ta hay sử dụng, ví dụ như ô tô, đồng hồ, máy 
+                                            hút bụi, … Chúng sẽ được tích hợp các thiết bị cảm biến, giúp chúng thu 
+                                            thập thông tin thực tế như hình ảnh đường đi, các đồ vật trên đường, đo 
+                                            nhịp tim, …
+                                        </div>
+                                        <div class="mt-2">
+                                            Tiếp đó, các dữ liệu được thu thập sẽ được truyền tải qua hệ thống mạng 
+                                            Internet. Những dữ liệu này sẽ được tải lên, xử lý và chia sẻ trên môi 
+                                            trường ảo. Quá trình này có thể tạo ra các lệnh, các chương trình giúp 
+                                            điều khiển hoạt động của thiết bị ban đầu.
+                                        </div>
+                                        <div class="mt-2">
+                                            Thiết bị, phương tiện thông minh sẽ tiếp nhận các lệnh mới thông qua dữ 
+                                            liệu đường truyền của mạng và tiến hành các nhiệm vụ được đặt ra.
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <img class="img" src="./images/vi-du-iot-sys.jpg" alt="vi-du-iot-sys">
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <i>Ví dụ của một hệ thống IoT</i>
+                                        </div>
+                                        <div class="mt-2">
+                                            Về cơ bản, IoT được đại diện bởi 4 phần: Thiết bị (Things), Trạm  kết nối
+                                            (Gateways), Hạ tầng mạng và điện toán đám mây (Network and Cloud), Bộ phân 
+                                            tích và xử lý dữ liệu (Services-creation and Solution Layers).
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <img class="img" src="./images/iot-parts.jpg" alt="iot-parts">
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <i>Các phần trong một hệ thống IoT</i>
+                                        </div>
+                                        <div class="mt-2">
+                                            Các thiết bị này thực hiện hầu hết công việc mà không có sự can thiệp của con 
+                                            người, mặc dù mọi người có thể tương tác với các thiết bị – ví dụ như: tạo các 
+                                            thiết lập cài đặt, cung cấp các hướng dẫn hoặc truy cập dữ liệu.
+                                        </div>
+                                        <div class="mt-2">
+                                            Đối với từng ứng dụng IoT cụ thể sẽ có các hình thức kết nối, mạng và giao thức 
+                                            giao tiếp được thiết lập tương ứng sử dụng cho các thiết bị hỗ trợ web này (thiết 
+                                            bị IoT).
+                                        </div>
+                                        <div class="mt-2">
+                                            IoT cũng có thể tận dụng trí tuệ nhân tạo (AI) và công nghệ học máy (machine learning) 
+                                            để hỗ trợ quá trình thu thập dữ liệu trở nên dễ dàng và năng động hơn.
+                                        </div>
+                                    </ol>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Tính chất đặc trưng</span>
+                                    <ol>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Khả năng định danh</span>
+                                            <div>
+                                                Các đối tượng tham gia vào IoT, bao gồm cả thiết bị, phương tiện và con người, 
+                                                đều sẽ được định danh và mọi hoạt động đều được tiến hành thông qua cách thức 
+                                                định danh này. Việc định danh được thực hiện giúp phân biệt và phân loại các 
+                                                nhóm đối tượng nhờ đó mà quy trình thu thập, xử lý và chia sẻ dữ liệu được tiến 
+                                                hành chính xác và hiệu quả hơn.
+                                            </div>
+                                            <div class="mt-2">
+                                                Cách thức định danh của IoT khá đa dạng, ví dụ như dùng mã QR, mã vạch, NFC, địa 
+                                                chỉ IP,… Tuy nhiên, các thông tin định danh này cần đảm bảo yếu tố độc nhất, tránh 
+                                                sự nhầm lẫn giữa các đối tượng hoặc thiết bị.
+                                            </div>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Tính thông minh</span>
+                                            <div>
+                                                Các yếu tố của trí tuệ nhân đạo đã và đang được cân nhắc để ứng dụng phát triển các 
+                                                thiết bị trong mạng lưới IoT. Mục tiêu là để tạo ra các thiết bị thông minh, được 
+                                                bổ sung đầy đủ các thiết bị thu thập, xử lý thông tin và có thể tự động thực hiện 
+                                                các nhiệm vụ nhất định, dựa trên tình huống và môi trường thực tế. Đồng thời, các 
+                                                dữ liệu, thông tin cũng sẽ được chia sẻ chung cho nhiều loại thiết bị khác nhau để 
+                                                sử dụng theo các tính năng riêng.
+                                            </div>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Phức tạp</span>
+                                            <div>
+                                                Trên thực tế, hệ thống kết nối của IoT vô cùng phức tạp. Hệ thống này bao gồm mọi 
+                                                đường liên kết, kết nối giữa các thiết bị với nhau, giữa các thiết bị cũ và các 
+                                                công nghệ, yếu tố mới, giữa các thiết bị thực tế và những dữ liệu được lưu trữ trên 
+                                                nền tảng Internet. Cũng chính vì đặc trưng này, việc vận hành và ứng dụng IoT không 
+                                                hề đơn giản, tốn nhiều thời gian và công sức thực hiện.
+                                            </div>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Kích thước của IoT</span>
+                                            <div>
+                                                Tính sơ bộ, một hệ thống IoT có thể liên kết 50 đến 100 nghìn tỉ đối tượng khác nhau, 
+                                                từng đối tượng đều giữ một vai trò nhất định trong việc chia sẻ và sử dụng dữ liệu. 
+                                                Trên thực tế, hiện nay chúng ta vẫn chưa khai thác được nhiều tài nguyên của hệ thống này.
+                                            </div>
+                                            <div class="mt-2">
+                                                Theo Công ty nghiên cứu và tư vấn công nghệ Gartner, Inc., trên thế giới sẽ có khoảng 26 
+                                                tỷ thiết bị tham gia vào hệ thống IoT trong năm 2020. Con số này hứa hẹn sẽ tiếp tục gia 
+                                                tăng nhanh chóng trong những năm tiếp theo.
+                                            </div>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Luồng năng lượng mới</span>
+                                            <div>
+                                                Hiện nay, IoT đang trải qua giai đoạn phát triển "bộc phát" và điều này xảy ra nhờ vào một 
+                                                số nhân tố, trong đó gồm IPv6, 4G, chi phí, tính sẵn có của công nghệ. Gary Atkinson, Giám 
+                                                đốc tiếp thị sản phẩm nhúng của ARM cho rằng, đã có nhiều thiết bị chứng tỏ rằng có thể thu 
+                                                thập dữ liệu và truyền tải dữ liệu trên mạng nhưng chỉ có giá khoảng 40 USD/sản phẩm. Hiện nay, 
+                                                chúng ta có thể nhìn thấy các bộ vi điều khiển 32-bit nền tảng ARM có giá dưới chỉ trên dưới 
+                                                1 USD (chỉ ở 23.000 đồng - thời giá tháng 4/2017). Với bộ vi điều khiển này, bạn có thể làm 
+                                                nhiều điều trên đó. Thu thập và truyền dữ liệu rẻ hơn nhiều: chỉ 50 xu cho một bộ vi điều khiển 
+                                                32-bit của ARM.
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="sub-section">
+                                    <span class="title-sub-section">Một số ứng dụng</span>
+                                    <ol>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Xã hội</span>
+                                            <ul class="mt-2" style="list-style-type: disc; padding-left: 18px;">
+                                                <li>
+                                                    <div class="font-bold">Thành phố thông minh</div>
+                                                    <div class="mt-2">
+                                                        Hệ sinh thái IoT được quan tâm nhất hiện nay chính là mô hình 
+                                                        <b>Smart Cities</b> – <i>Thành phố thông minh</i>. Một số ứng 
+                                                        dụng IoT đang được phổ biến rộng rãi để nâng cao chất lượng cuộc 
+                                                        sống cũng như cải thiện chất lượng quản lý của chính quyền.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/smart-cities.jpg" alt="smart-cities">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Thành phố thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Quản lý hạ tầng</div>
+                                                    <div class="mt-2">
+                                                        IoT và ứng dụng quan trọng của IoT là quản lý cơ sở hạ tầng, IoT có 
+                                                        thể giám sát và kiểm soát các hoạt động của cơ sở hạ tầng đô thị và 
+                                                        nông thôn như cầu, đường ray tàu hỏa và trang trại, … IoT có thể sử 
+                                                        dụng để theo dõi bất kỳ sự kiện hoặc những thay đổi trong điều kiện 
+                                                        cơ cấu mà có thể ảnh hưởng đến sự an toàn và sự nguy hiểm đến hạ tầng. 
+                                                        Nó có thể được sử dụng để lập kế hoạch hoạt động sửa chữa và bảo trì 
+                                                        một cách hiệu quả.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Về quản lý có thể kể đến dự án “Ứng dụng IoT vào quản lý và vận hành 
+                                                        hệ thống hạ tầng kỹ thuật - Đô thị thông minh” của tiến sĩ Lê Ngọc Thành. 
+                                                        Hệ thống được sử dụng để quản lý và vận hành hệ thống giao thông, cấp thoát 
+                                                        nước và mạng điện giúp hoạt động của đô thị được thông minh và bền vững hơn.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/quan-ly-ha-tang.jpg" alt="quan-ly-ha-tang">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Quản lý hạ tầng</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Giao thông thông minh</div>
+                                                    <div class="mt-2">
+                                                        Các sản phẩm của IoT có thể hỗ trợ trong việc tích hợp các thông tin 
+                                                        liên lạc, kiểm soát và xử lý thông tin qua nhiều hệ thống giao thông 
+                                                        vận tải. Ứng dụng của IoT mở rộng đến tất cả các khía cạnh của hệ thống 
+                                                        giao thông, tức là xe, cơ sở hạ tầng, và người lái xe sử dụng. Tương tác 
+                                                        giữa các thành phần của một hệ thống giao thông vận tải cho phép điều khiển 
+                                                        giao thông thông minh, bãi đậu xe thông minh, hệ thống thu phí điện tử, 
+                                                        quản lý đội xe, an toàn và hỗ trợ đường bộ. Từ xe hơi kết nối đến xe hơi 
+                                                        tự lái cho đến hệ thống giao thông vận tải và hậu cần thông minh IoT có thể 
+                                                        cứu người và giảm lưu lượng giao thông và giảm thiểu tác động của xe đến môi 
+                                                        trường. Hay ứng dụng vào nó có thể kể đến các trụ đèn phát sáng hai bên đường 
+                                                        nó có thể cảm biến, có thể tự nhận dạng ngày và đêm để bật tắt đèn một cách 
+                                                        hợp lý nhất.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/giao-thong-thong-minh.jpg" alt="giao-thong-thong-minh">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Giao thông thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Hệ thống nước thông minh</div>
+                                                    <div class="mt-2">
+                                                        Bảo tồn nước là một trong những khía cạnh thiết yếu trong quản lý nước, đặc biệt 
+                                                        là ở khu vực thành thị, nơi việc lưu giữ hồ sơ tiêu thụ nước là vô cùng khó khăn. 
+                                                        Vấn đề này có thể được giải quyết bằng IoT, nó sẽ lưu giữ hồ sơ về những người sử 
+                                                        dụng nước vào một ngày cụ thể. Chúng ta có thể phân tích dữ liệu và điều kiện thời 
+                                                        tiết của ngày hôm đó để xác định lượng nước mà người dân tiêu thụ trên một thành 
+                                                        phố cụ thể. Điều này chắc chắn sẽ giúp các cơ quan quản lý nước quản lý dòng chảy 
+                                                        của nước theo cách hiệu quả hơn nhiều.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/he-thong-nuoc-thong-minh.jpg" alt="he-thong-nuoc-thong-minh">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Hệ thống nước thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Dịch vụ đỗ xe thông minh</div>
+                                                    <div class="mt-2">
+                                                        Hệ thống dịch vụ bãi đỗ xe thông minh sử dụng công nghệ IoT giúp nhà quản lý giao 
+                                                        thông, công ty khai thác điểm đỗ giảm được các chi phí nhân công, sử dụng tối ưu 
+                                                        các nguồn lực sẵn có để tạo ra một hệ thống liên kết các bãi đỗ xe của thành phố 
+                                                        thuận tiện cho người dùng.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Thông qua sử dụng thông tin chỗ đỗ xe được cung cấp trên website, ứng dụng thông 
+                                                        minh và các bảng điện tử bên đường giúp người lái xe tiếp cận thông tin thời gian 
+                                                        thực một cách nhanh chóng, giảm thời gian, chi phí lòng vòng đi tìm chỗ đỗ. Từ đó 
+                                                        sẽ làm giảm đáng kể tắc nghẽn giao thông cũng như ô nhiễm môi trường.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/smart-parking.jpg" alt="smart-parking">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Dịch vụ đỗ xe thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Nông nghiệp thông minh</div>
+                                                    <div class="mt-2">
+                                                        Trong nghành nông nghiệp dựa trên IoT, một hệ thống được xây dựng để giám sát lĩnh 
+                                                        vực trồng trọt với sự trợ giúp của cảm biến (ánh sáng, độ ẩm, nhiệt độ, độ ẩm của 
+                                                        đất, ...) và tự động hóa hệ thống tưới tiêu. Nông dân có thể theo dõi điều kiện 
+                                                        đồng ruộng từ bất cứ đâu. Nông nghiệp thông minh dựa trên IoT rất hiệu quả so với 
+                                                        phương pháp thông thường.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Các ứng dụng của nông nghiệp thông minh dựa trên IoT không chỉ nhắm mục tiêu đến 
+                                                        các hoạt động chăn nuôi quy mô lớn mà còn là những đòn bẩy mới để nâng cao các xu 
+                                                        hướng phát triển khác trong nông nghiệp như canh tác hữu cơ, chăn nuôi gia đình và 
+                                                        tăng cường việc canh tác trong suốt.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/nong-nghiep-thong-minh.jpg" alt="nong-nghiep-thong-minh">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Nông nghiệp thông minh</i>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Doanh nghiệp</span>
+                                            <ul class="mt-2" style="list-style-type: disc; padding-left: 18px;">
+                                                <li class="my-2">
+                                                    <div class="font-bold">Hệ thống bán lẻ</div>
+                                                    <div class="mt-2">
+                                                        Sự kết hợp giữa IoT và công nghệ nhận dạng khuôn mặt ngày càng phổ biến. Các nhà 
+                                                        bán lẻ có thể nhận diện được khách hàng này là ai, ngay từ khi họ mới bước vào cửa 
+                                                        hàng. Nhờ vào hồ sơ trực tuyến thu thập được và tải lên hệ thống. Điều này sẽ giúp 
+                                                        các nhà bán lẻ cung cấp trải nghiệm mua sắm cá nhân hóa cao cho người tiêu dùng.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        IoT cũng được ứng dụng để xây dựng thành công giỏ hàng mua sắm online. Nó cho phép 
+                                                        người tiêu dùng tải lên danh sách sản phẩm của cửa hàng. Sau đó hướng dẫn họ tìm kiếm 
+                                                        và lựa chọn được sản phẩm phù hợp. Cuối cùng, khách hàng chỉ cần xác nhận rõ một lần 
+                                                        nữa các sản phẩm đang có trong giỏ hàng và thanh toán.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/he-thong-ban-le-thong-minh.jpg" alt="he-thong-ban-le-thong-minh">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Hệ thống bán lẻ</i>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Thêm vào đó, nhờ vào các tiến bộ công nghệ về xử lý dữ liệu và phân tích dự đoán, 
+                                                        không những chúng ta có thể biết những gì đang diễn ra vào thời điểm hiện tại, mà 
+                                                        còn có thể tiên đoán được những gì có thể xảy ra trong tương lai. Ý nghĩa của điều 
+                                                        này đối với các nhà bán lẻ, nhà phân phối hay nhà sản xuất chính là khả năng truy 
+                                                        xuất thông tin tức thời, cập nhật các xu hướng tương lai giúp kiểm soát chuỗi cung 
+                                                        ứng một cách hiệu quả hơn.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Trong tương lai, nếu các nhà bán lẻ chịu cập nhật công nghệ IoT. Và sử dụng gắn tag 
+                                                        điện tử (thẻ giá, thẻ thông tin) trên mọi sản phẩm. Qua đó sẽ giúp họ có thể cập nhật 
+                                                        giá cả, thông tin sản phẩm bằng internet. Đồng thời, nhà bán lẻ có thể giám sát chính 
+                                                        xác hơn việc dịch chuyển hàng hóa. Từ đó cải thiện việc quản lý hàng hóa trong kho. 
+                                                        Nó sẽ giúp tiết kiệm thời gian nhiều hơn so với cách cập nhật thủ công bằng tay trước đây.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/ban-le-tuong-lai.jpg" alt="ban-le-tuong-lai">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Hệ thống bán lẻ trong tương lai</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Tự động hóa</div>
+                                                    <div class="mt-2">
+                                                        Cụ thể trong nhà máy sản xuất, việc số hóa sản xuất/sản xuất thông minh là giúp cho 
+                                                        hệ thống thiết bị - thiết bị giao tiếp với nhau một cách dễ dàng, liên tục mà không 
+                                                        cần sự giám sát, cho phép của con người trong quá trình đó. Việc giao tiếp giữa thiết 
+                                                        bị - thiết bị giúp cho hệ thống cảm biến, hệ thống cơ cấu chấp hành, hệ thống điều 
+                                                        khiển cho phép tương tác với nhau ngay lập tức. Các thiết bị sẽ thông minh hơn, dữ 
+                                                        liệu từ thiết bị sẽ đưa về trung tâm nhiều hơn. Việc ứng dụng công nghệ AI, Bigdata 
+                                                        cho phép trung tâm sử dụng lượng lớn dữ liệu đó để ra quyết định bảo trì hợp lý giúp 
+                                                        hệ thống hoạt động một cách bền bỉ, hợp lý hơn, tránh cho các tổn hao do việc dừng 
+                                                        hệ thống sản xuất để sửa chữa, ...
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/tu-dong-hoa.jpg" alt="tu-dong-hoa">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Tự động hóa</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Năng lượng thông minh</div>
+                                                    <div class="mt-2">
+                                                        Sản xuất, truyền tải và sử dụng năng lượng đang ngày càng hiệu quả và bền vững hơn với 
+                                                        Internet of Things (IoT). Các cảm biến, thiết bị và phân tích dữ liệu được hỗ trợ IoT 
+                                                        đem trí thông minh đến cho thiết bị cũng như mang lại thông tin chuyên sâu hữu dụng, 
+                                                        giúp các công ty năng lượng quản lý tài sản một cách linh hoạt, giảm chi phí bảo trì 
+                                                        và truyền tải, đồng thời cải thiện an toàn cho người lao động. Những máy tính công 
+                                                        nghiệp cùng với các thành phần phần mềm có khả năng tương thích, bảo mật và nâng cấp 
+                                                        của Intel đang tiếp sức để thúc đẩy phát triển năng lượng thông minh.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        IoT giúp cho việc truyền thông giữa các thiết bị cảm biến với các công tơ thông minh 
+                                                        được liên tục, cho phép tự động điều khiển các thiết bị như điều hoà nhiệt độ, lò sưởi, 
+                                                        hệ thống ánh sáng, ... một cách hiệu quả và tiết kiệm năng lượng. Đối với hệ thống điều 
+                                                        khiển trạm biến áp, khả năng kết nối trực tiếp với thiết bị và trao đổi dữ liệu với các 
+                                                        hệ thống quản lý cho phép phát hiện, xử lý mọi bất thường của hệ thống, giúp cho các công 
+                                                        ty đạt được mục tiêu giảm tổn thất điện năng, giảm thiếu tối đa sự cố mất điện diện rộng 
+                                                        mà không cần có sự can thiệp của con người.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/nang-luong-thong-minh.jpg" alt="nang-luong-thong-minh">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Năng lượng thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Quản lý nhân sự</div>
+                                                    <div class="mt-2">
+                                                        Nếu bạn là một người có tầm nhìn, việc quản trị nhân sự một cách hiệu quả là một trong 
+                                                        những yếu tố tạo nên sự bền bỉ, vững mạnh của doanh nghiệp. Tạo sự thoải mái trong việc 
+                                                        quản lý, tạo dựng văn hoá, niềm vui khi đến công ty sẽ giúp bạn xây dựng được một môi 
+                                                        trường làm việc đáng mơ ước. Nhờ vào nền tảng IoT được xây dựng với liên kết vững chắc, 
+                                                        mọi hoạt động chấm công, khối lượng công việc trên mỗi dự án, nghỉ phép, danh sách đều 
+                                                        được theo dõi và quản lý thông qua phần mềm quản lý hệ thống.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Mỗi nhà quản lý đều có thể dễ dàng kiểm soát và nắm bắt tình hình nhân sự, chỉ thông qua 
+                                                        một app quản lý hệ thống của công ty. Đặc biệt, ACheckin hỗ trợ chấm công hiệu quả thông 
+                                                        qua mã QR. Việc sử dụng QR Code để chấm công mang lại sự ổn định, nhanh chóng và hạn chế 
+                                                        tiếp xúc hơn là những phương pháp truyền thống thông thường. Bên cạnh đó, những dữ liệu 
+                                                        liên quan sẽ được đồng bộ tự động trên hệ thống để tính ngày công cho nhân viên. Việc 
+                                                        quản lý nhân sự trên chính chiếc điện thoại thông minh của mình giúp công việc tiện lợi 
+                                                        hơn, cập nhật xu thế phát triển của công nghệ 4.0.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/quan-ly-nhan-su.jpg" alt="quan-ly-nhan-su">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Quản lý nhân sự</i>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-sub-section">
+                                            <span class="title-sub-sub-section">Người tiêu dùng</span>
+                                            <ul class="mt-2" style="list-style-type: disc; padding-left: 18px;">
+                                                <li class="my-2">
+                                                    <div class="font-bold">Nhà thông minh</div>
+                                                    <div class="mt-2">
+                                                        Smart home có thể nói là ứng dụng của IoT gây được tiếng vang lớn trên toàn cầu và được 
+                                                        tìm kiếm nhiều nhất trên Internet với ứng dụng IoT. Chỉ cần tưởng tượng khi bạn không có 
+                                                        ở nhà mà vẫn có thể tắt các thiết bị trong nhà, mở khóa cho bạn bè vào nhà hay theo dõi 
+                                                        các tài sản của bạn từ xa thông qua hệ thống camera, như vậy phần nào cho ta thấy được 
+                                                        những lợi ích đáng kể của những ngôi nhà thông minh. Những ngôi nhà thông minh sẽ giúp 
+                                                        chúng ta tiết kiệm được thời gian và những nỗ lực cũng như luôn tạo ra một sự yên tâm 
+                                                        về độ an toàn.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Smart home đang mang lại những lợi ích đáng kể cho cuộc sống con người tuy nhiên để sở 
+                                                        hữu được một ngôi nhà thông minh lại tốn rất nhiều chi phí. Hơn nữa các thiết bị được 
+                                                        sử dụng trong nhà thông minh cũng có giá thành vô cùng đắt đỏ do việc cái tiến công nghệ, 
+                                                        tính năng sản phẩm cũng như quá trình sản xuất khá tốn kém. Nếu vài năm trước đây người 
+                                                        dùng còn e dè trước những chiếc smart phone hay giá thành của những chiếc điện thoại thông 
+                                                        minh cũng không hề nhỏ thì giờ đây smart phone lại trở thành một thiết bị vô cùng quen thuộc 
+                                                        và không thể thiếu với mỗi người và chi phí cho những chiếc điện thoại thông minh cũng được 
+                                                        giảm rất nhiều phù hợp với từng đối tượng người dùng. Smart home trong tương lại không xa 
+                                                        chắc chắc cũng sẽ trở nên quen thuộc như những chiếc smart phone bây giờ.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/smart-home.jpg" alt="smart-home">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Nhà thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Ô tô thông minh</div>
+                                                    <div class="mt-2">
+                                                        Ngành công nghiệp ô tô đã nhận ra những lợi thế đáng kể từ việc sử dụng các ứng dụng IoT. 
+                                                        Ngoài những lợi ích của việc áp dụng IoT vào dây chuyền sản xuất, các cảm biến có thể phát 
+                                                        hiện lỗi thiết bị sắp xảy ra trên các phương tiện đã đi trên đường và có thể cảnh báo cho 
+                                                        người lái xe một cách chi tiết.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Nhờ thông tin tổng hợp được thu thập bởi các ứng dụng dựa trên IoT, các nhà sản xuất và nhà 
+                                                        cung cấp ô tô có thể tìm hiểu thêm về cách giữ cho xe chạy và thông báo cho chủ xe về các 
+                                                        thông tin phía trước.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Các nhà sản xuất ô tô đã bước qua giai đoạn tập trung vào việc tối ưu hóa các chức năng nội bộ 
+                                                        của một chiếc xe. Giờ đây họ quan tâm đến việc tối ưu hóa sự hài lòng của người sử dụng với việc 
+                                                        nâng cao trải nghiệm trong xe hơi.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Một chiếc xe được kết nối là chiếc xe có khả năng tối ưu hóa hoạt động, bảo trì cũng như sự thoải 
+                                                        mái của khách hàng khi sử dụng. Các thương hiệu lớn như BMW, Tesla, … đang nỗ lực cho cuộc cách mạng 
+                                                        tiếp theo của ngành sản xuất ô tô.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/smart-car.jpg" alt="smart-cart">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Ô tô thông minh</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Chăm sóc sức khoẻ</div>
+                                                    <div class="mt-2">
+                                                        Một trong những ứng dụng có thể nói là được mong chờ nhất khi IoT xuất hiện đó là việc cải thiện 
+                                                        hệ thống chăm sóc sức khỏe con người hiện tại. Internet of thing có tiềm năng to lớn trong ngành 
+                                                        “công nghiệp chăm sóc sức khỏe”, ta thường hay gọi bằng IoMT (Internet of Medical Things), những 
+                                                        ứng dụng trong lĩnh vực này giúp nâng cao chất lượng chăm sóc sức khỏe, giảm thiểu căng thẳng cho 
+                                                        các chuyên gia y tế, giúp bệnh nhân có thể điều trị ngay tại nhà mà không cần đến bệnh viện.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Những sáng kiến IoT đã bắt đầu được thực hiện tại một số nơi và dần tăng lên nhanh chóng ngay cả 
+                                                        khi vẫn còn tồn tại nhiều rào cản. Cho đến nay các sáng kiến IoT trong chăm sóc sức khỏe hầu hết 
+                                                        xoay quanh việc cải thiện hệ thống giám sát sức khỏe từ xa, kiểm soát và bảo trì tài sản với các 
+                                                        thiết bị y tế, tài sản chăm sóc sức khỏe và các tài sản phi y tế như tài sản xây dựng bệnh viện.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Dịch COVID-19 đã buộc hàng trăm triệu người trên toàn thế giới phải thay đổi hành vi của họ để phù 
+                                                        hợp với các dịch vụ chăm sóc sức khỏe; ngoài ra, tốc độ tăng trưởng đáng kể trong ngành chăm sóc 
+                                                        sức khỏe chủ yếu được thúc đẩy bởi công nghệ IoT và các ứng dụng được triển khai dựa trên nền tảng 
+                                                        điện toán đám mây như một dịch vụ nhằm theo dõi tình trạng và chăm sóc sức khỏe. Bên cạnh đó, một 
+                                                        số công cụ được hỗ trợ bổ sung cho công nghệ này, bao gồm kết nối tốc độ cao, kết hợp các giải pháp 
+                                                        cảm biến và ứng dụng các công nghệ đeo.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/health-care.jpg" alt="health-care">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Chăm sóc sức khoẻ</i>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="font-bold">Đồ gia dụng thông minh</div>
+                                                    <div class="mt-2">
+                                                        Nhiều vật dụng trong nhà đã được tích hợp công nghệ IoT như máy đun nước, lò vi sóng, máy pha cà 
+                                                        phê, điều hòa, máy lạnh, tivi, ... Bạn có thể điều khiển ở bất kì đâu khi có kết nối internet.
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        Tất cả các thiết bị từ gia dụng và nghe nhìn đến di động đều được kết nối và quản lý từ một ứng 
+                                                        dụng đồng bộ SmartThings. Có thể nói rằng, SmartThings mở ra một kỷ nguyên của những trải nghiệm 
+                                                        kết nối không giới hạn, trải rộng khắp các thiết bị, phần mềm và dịch vụ trên nền Internet.
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <img class="img" src="./images/do-gia-dung-thong-minh.jpg" alt="do-gia-dung-thong-minh">
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <i>Đồ gia dụng thông minh</i>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="./gioi-thieu-chung.html" class="prev-next">
+                                <i class="fa fa-arrow-left"></i>
+                                Giới thiệu chung
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <a href="#" class="prev-next">
+                                <i class="fa fa-arrow-right"></i>
+                                Tác động
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="text-center footer">&copy; Copyright 2021 - Group 07 - NMĐT</div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
