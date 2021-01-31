@@ -50,6 +50,10 @@ body {
     color: blue;
 }
 
+.prev-next:visited {
+    color: blue;
+}
+
 .prev-next:hover {
     text-decoration: underline;
     color: red;
@@ -234,6 +238,20 @@ li ol > li:before {
 #logo-bk {
     width: 30%;
     height: 30%;
+}
+
+.link-noi-dung:link {
+    text-decoration: none;
+    color: black;
+}
+
+.link-noi-dung:visited {
+    color: black;
+}
+
+.link-noi-dung:hover {
+    text-decoration: underline;
+    color: red;
 }
 
 @media screen and (min-width: 576px) {
